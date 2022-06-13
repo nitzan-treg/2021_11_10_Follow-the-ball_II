@@ -1,17 +1,14 @@
-#  Polar Trail
-This is an experiment with curves and polar coordinates, I tried to create an interesting animation by animating the U, V or Radius compounents of the Polar Coordinates
+#  Follow The Ball II
 
-<img alt = "gif" src="Images/2021_10_16_polar_trail_1.gif">
-<img alt = "gif" src="Images/2021_10_16_polar_trail_2.gif">
-<img src="Images/2021_10_16_polar_trail.png">
+This is an experiment with camera rig and motion graphics, I tried to create an interesting animation by animating a camera along a curve while changing the enviroment drastically.
 
-The curves were created in a for() loop inside Point VOP, in every loop each point would sample a Curl noise, add it to its current position and add a new point in said position.
+this HIP file contains a free "camera curve" HDA that I created to animate this scene, 
 
-<img src="Images/Curl_Noise_Trail.png">
+<img alt = "gif" src="Images/Follow_the_ball_v02.gif">
 
-Afterward I would normalize the Position attribute, convert it to polar cordiantes, add the world and polar position togerher, while animating the world position. 
-<img src="Images/Polar_Deform.png">
+When diving into the scene, Use the side camera to observe it easly:
+
+<img alt = "gif" src="Images/Scene.gif">
 
 Full Node Tree:
 <img src="Images/Node Tree.png">
-
